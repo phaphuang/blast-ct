@@ -35,6 +35,7 @@ class ModelInference(object):
                 self.logger.info(message)
 
         time_elapsed = time.time() - start_inference
+        print("--- Total runtime %s seconds ---" % (time_elapsed))
         self.logger.info(
             'Inference completed in {:.0f}h {:.0f}m {:.0f}s'.format(time_elapsed // 3600, time_elapsed % 3600 // 60,
                                                                     time_elapsed % 3600 % 60))
